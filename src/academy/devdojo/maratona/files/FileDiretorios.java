@@ -6,15 +6,15 @@ import java.io.IOException;
 public class FileDiretorios {
     public static void main(String[] args) throws IOException {
         File fileDirectory = new File("pasta");
-        fileDirectory.mkdir();
+        System.out.println("Directory is created: " + fileDirectory.mkdir());
 
         File fileOnDirectory = new File(fileDirectory, "arquivo.txt");
-        fileOnDirectory.createNewFile();
+        System.out.println("arquivo.txt is created: " + fileOnDirectory.createNewFile());
 
         File fileRenamed = new File(fileDirectory, "arquivo_renomeado.txt");
-        fileOnDirectory.renameTo(fileRenamed);
+        System.out.println("file is renamed: " + fileOnDirectory.renameTo(fileRenamed));
 
         File fileDirectoryRenamed = new File("pasta 2");
-        fileDirectory.renameTo(fileDirectoryRenamed);
+        System.out.println("directory is renamed: " + fileDirectory.renameTo(fileDirectoryRenamed));
     }
 }
