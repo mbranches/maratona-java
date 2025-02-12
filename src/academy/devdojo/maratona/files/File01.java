@@ -18,7 +18,7 @@ public class File01 {
 
 
     public static void main(String[] args) {
-        File file = new File("file01.txt");
+        File file = new File("file.txt");
         try {
             boolean isCreated = file.createNewFile();
             System.out.println(isCreated);

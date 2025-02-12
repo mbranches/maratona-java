@@ -9,7 +9,7 @@ public class FileWriter01 {
         File file = new File("file.txt");
 
         try (FileWriter fileWriter = new FileWriter(file, true);) {
-            fileWriter.write("Eu sou lindo\nSEILAAAAA\n");
+            fileWriter.write("Olá, Marcus\nSEILAAAAA\n");
 
         } catch (IOException e) {
             throw new RuntimeException(e);
