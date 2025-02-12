@@ -22,7 +22,7 @@ public class TryWithResourcesTest01 {
     public static void lerArquivo2() {
         Reader reader = null;
         try {
-            reader = new BufferedReader(new FileReader("teste.txt"));
+//            reader = new BufferedReader(new FileReader("teste.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } finally {
