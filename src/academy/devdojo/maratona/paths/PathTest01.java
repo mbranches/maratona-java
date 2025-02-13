@@ -1,6 +1,5 @@
 package academy.devdojo.maratona.paths;
 
-import javax.sound.sampled.Control;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
