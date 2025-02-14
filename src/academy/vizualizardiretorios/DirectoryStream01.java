@@ -1,4 +1,4 @@
-package academy.DirectoryStream;
+package academy.vizualizardiretorios;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
