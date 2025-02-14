@@ -1,4 +1,4 @@
-package academy.vizualizardiretorios;
+package academy.devdojo.maratona.vizualizardiretorios;
 
 import java.io.IOException;
 import java.nio.file.*;
