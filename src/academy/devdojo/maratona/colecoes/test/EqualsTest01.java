@@ -1,6 +1,6 @@
-package academy.devdojo.maratona.colecoes.teste;
+package academy.devdojo.maratona.colecoes.test;
 
-import academy.devdojo.maratona.colecoes.dominio.teste.Smartphone;
+import academy.devdojo.maratona.colecoes.domain.Smartphone;
 
 public class EqualsTest01 {
     public static void main(String[] args) {
