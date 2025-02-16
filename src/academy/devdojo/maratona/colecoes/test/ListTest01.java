@@ -12,5 +12,17 @@ public class ListTest01 {
             System.out.println(nome);
         }
 
+        System.out.println();
+
+        List<Integer> numeros = new ArrayList<>();
+        numeros.add(1);
+        numeros.add(2);
+        System.out.println(numeros);
+
+        System.out.println();
+
+        List<String> nomes2 = new ArrayList<>();
+        nomes2.addAll(nomes);
+        System.out.println(nomes2);
     }
 }
