@@ -27,6 +27,14 @@ public class Smartphone {
         return this.serialNumber != null && this.serialNumber.equals(smartphone.getSerialNumber());
     }
 
+    // se x.equals(y) == true, y.hashCode() == x.hashCode()
+    // y.hashCode() == x.hashCode, não necessaraiamente x.equals(y) == true
+    // y.hashCode() != x.hashCode(), logo> y.equals(x) == false
+    @Override
+    public int hashCode() {
+        return serialNumber == null ? 0 : serialNumber.hashCode();
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }
