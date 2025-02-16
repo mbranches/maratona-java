@@ -1,4 +1,4 @@
-package academy.devdojo.maratona.colecoes.dominio.teste;
+package academy.devdojo.maratona.colecoes.domain;
 
 public class Smartphone {
     private String serialNumber;
