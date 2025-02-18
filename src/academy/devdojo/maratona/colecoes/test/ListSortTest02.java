@@ -4,7 +4,16 @@ import academy.devdojo.maratona.colecoes.domain.Manga;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class MangaByIdComparator implements Comparator<Manga> {
+
+    @Override
+    public int compare(Manga o1, Manga o2) {
+        return o1.getId().compareTo(o2.getId());
+    }
+}
 
 public class ListSortTest02 {
     public static void main(String[] args) {
@@ -17,8 +26,9 @@ public class ListSortTest02 {
 
         System.out.println(mangas);
 
-        Collections.sort(mangas);
-
+//        Collections.sort(mangas);
+//        Collections.sort(mangas, new MangaByIdComparator());
+        mangas.sort(new MangaByIdComparator());
         System.out.println(mangas);
     }
 }
