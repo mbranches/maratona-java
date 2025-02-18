@@ -1,8 +1,10 @@
 package academy.devdojo.maratona.colecoes.domain;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements Comparable<Manga>{
     private Long id;
     private String nomeManga;
     private double preco;
@@ -57,5 +59,18 @@ public class Manga {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(@NotNull Manga o) {
+        //negativo -> se o this < outro objeto, 0 -> se forem iguais, positivo -> se this for maior
+
+//        if (this.id < o.getId()) return -1;
+//
+//        if (this.id.equals(o.getId())) return 0;
+//
+//        return 1;
+
+        return this.id.compareTo(o.getId());
     }
 }
