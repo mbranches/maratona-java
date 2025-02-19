@@ -8,6 +8,7 @@ import java.util.List;
 
 public class IteratorTest01 {
     public static void main(String[] args) {
+        //o ideal para remoções (caso for utilizar muito) é linkedlist
         List<Manga> mangas = new ArrayList<>();
         mangas.add(new Manga(5L, "Attack on titan",19.9, 0));
         mangas.add(new Manga(1L, "Naruto",21.5, 5));
