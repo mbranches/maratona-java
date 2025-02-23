@@ -6,6 +6,7 @@ import academy.devdojo.maratona.lambdas.service.AnimeComparators;
 import java.util.ArrayList;
 import java.util.List;
 
+//Reference to a static method
 public class MethodReferenceTest01 {
     public static void main(String[] args) {
         List<Anime> animes = new ArrayList<>(List.of(new Anime("Naruto", 210), new Anime("OnePiece", 900), new Anime("Dragon Ball", 211)));

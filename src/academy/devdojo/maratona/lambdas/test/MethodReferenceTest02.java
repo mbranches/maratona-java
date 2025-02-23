@@ -6,14 +6,13 @@ import academy.devdojo.maratona.lambdas.service.AnimeComparators;
 import java.util.ArrayList;
 import java.util.List;
 
+//Reference to an instance method of a particular object
 public class MethodReferenceTest02 {
     public static void main(String[] args) {
+        AnimeComparators animeComparators = new AnimeComparators();
         List<Anime> animes = new ArrayList<>(List.of(new Anime("Naruto", 210), new Anime("OnePiece", 900), new Anime("Dragon Ball", 211)));
-//        animes.sort((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()));
-//        animes.sort((a1, a2) -> AnimeComparators.compareByTitle(a1, a2));
-        animes.sort(AnimeComparators::compareByTitle);
-        System.out.println(animes);
-        animes.sort(AnimeComparators::compareByEpisodes);
+//        animes.sort((o1, o2) -> animeComparators.compareByEpisodesNonStatic(o2, o2));
+        animes.sort(animeComparators::compareByEpisodesNonStatic);
         System.out.println(animes);
     }
 }

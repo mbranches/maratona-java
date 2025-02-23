@@ -5,14 +5,20 @@ import academy.devdojo.maratona.lambdas.service.AnimeComparators;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
 
-//Refence to an instance method of a particular object
-public class MethodReferenceTest02 {
+//Reference to a non-static method directly from the class
+public class MethodReferenceTest03 {
     public static void main(String[] args) {
-        AnimeComparators animeComparators = new AnimeComparators();
-        List<Anime> animes = new ArrayList<>(List.of(new Anime("Naruto", 210), new Anime("OnePiece", 900), new Anime("Dragon Ball", 211)));
-//        animes.sort((o1, o2) -> animeComparators.compareByEpisodesNonStatic(o2, o2));
-        animes.sort(animeComparators::compareByEpisodesNonStatic);
-        System.out.println(animes);
+        List<String> names = new ArrayList<>(List.of("Marcus", "Vinicius", "Branches"));
+        names.sort(String::compareTo);
+        System.out.println(names);
+        Function<String, Integer> numStringToInteger = Integer::parseInt;
+        System.out.println(numStringToInteger.apply("10"));
+
+        BiPredicate<List<String>, String> checkName = List::contains;
+        System.out.println(checkName.test(names, "Marcus"));
     }
+
 }
