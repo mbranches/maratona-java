@@ -33,6 +33,7 @@ public class ComportamentoPorParametroTest03 {
         List<Car> redCars = filter(
                 cars,
                 car -> car.getColor().toLowerCase().equals("red")
+                //é como se eu estivesse criando uma classe que implementa CarPredicade e substitui o seu metodo test
         );
 
         List<Integer> nums = List.of(1, 2, 3, 7, 4, 9, 6, 0, 8);
