@@ -32,11 +32,13 @@ public class LightNovel {
 
     @Override
     public String toString() {
-        return "LightNovel{" +
-                "title='" + title + '\'' +
-                ", price=" + price +
-                ", category=" + category +
-                '}';
+//        return "LightNovel{" +
+//                "title='" + title + '\'' +
+//                ", price=" + price +
+//                ", category=" + category +
+//                '}';
+
+        return getTitle();
     }
 
     public String getTitle() {
