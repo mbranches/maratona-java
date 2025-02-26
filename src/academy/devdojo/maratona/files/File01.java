@@ -2,12 +2,7 @@ package academy.devdojo.maratona.files;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.Date;
-import java.util.Locale;
 
 public class File01 {
     //File - com arquivo em si
