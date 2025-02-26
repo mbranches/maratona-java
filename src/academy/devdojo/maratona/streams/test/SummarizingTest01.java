@@ -3,12 +3,11 @@ package academy.devdojo.maratona.streams.test;
 import academy.devdojo.maratona.streams.domain.LightNovel;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CollectorsTest01 {
+public class SummarizingTest01 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Naruto", 8.99),
             new LightNovel("Overlord", 3.99),
