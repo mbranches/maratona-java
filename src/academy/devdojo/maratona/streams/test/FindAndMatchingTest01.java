@@ -5,9 +5,8 @@ import academy.devdojo.maratona.streams.domain.LightNovel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Stream;
 
-public class FindAndMatching {
+public class FindAndMatchingTest01 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Naruto", 8.99),
             new LightNovel("Overlord", 3.99),
